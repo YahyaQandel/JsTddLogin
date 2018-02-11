@@ -1,0 +1,25 @@
+{
+  "name": "logintestmodule",
+  "version": "1.0.0",
+  "description": "a test for login through server request",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YahyaQandel/JsTddLogin.git"
+  },
+  "keywords": [
+    "Test",
+    "Tdd",
+    "JS",
+    "Mocha"
+  ],
+  "author": "YahyaQandel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YahyaQandel/JsTddLogin/issues"
+  },
+  "homepage": "https://github.com/YahyaQandel/JsTddLogin#readme"
+}
