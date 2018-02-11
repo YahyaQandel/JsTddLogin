@@ -4,7 +4,7 @@
   "description": "a test for login through server request",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/YahyaQandel/JsTddLogin/issues"
   },
-  "homepage": "https://github.com/YahyaQandel/JsTddLogin#readme"
+  "homepage": "https://github.com/YahyaQandel/JsTddLogin#readme",
+  "dependencies": {
+    "chai": "^4.1.2"
+  }
 }
