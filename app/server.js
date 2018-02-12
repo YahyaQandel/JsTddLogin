@@ -6,7 +6,17 @@ var app = express();
 
 
 app.get("/login", function(req, res) {
-  var test = (req.query.username==config.TEST_USERNAME&&req.query.password==config.TEST_PASSWORD)
+	res.header('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Origin', '*');;
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    res.header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+
+
+  var test = (req.query.username==config.SUCCEED_TEST_USERNAME&&req.query.password==config.SUCCEED_TEST_PASSWORD)
+
+  console.log(req.query);
   res.send(test);
 });
 
